@@ -11,13 +11,16 @@
 </head>
 <style>
     canvas{position:fixed;z-index: 999;left:0;top:0;}
-    #slip{width:658px;height:548px;position:fixed;left:50%;top:0;z-index: 1000;}
-    #slip .sz{position:absolute;left:50%;}
+    #slip{width:658px;height:548px;margin-left:-329px;position:fixed;left:50%;top:-800px;z-index: 1000;}
+    #slip .sz{position:absolute;width:12px;height:300px;top:-78px;background:url("../imags/sz.png");background-size:cover;left:50%;transform: scale(0.5,0.5);}
+    #slip .liuyan{position:absolute;left:50%;margin-left:-325px;transform: scale(0.5,0.5);}
+    #slip .word{color: #fdff4f;cursor:pointer;width:300px;height:100px;position:absolute;left:208px;top:249px;font-size:39px;line-height:46px;}
 </style>
 <body>
 <ul id="slip">
-    <img src="../imags/sz.png" class="sz" alt="">
+    <p class="sz"></p>
     <img src="../imags/liuyan.png" class="liuyan" alt="">
+    <p class="word">舍不得离开了？点我更多惊喜</p>
 </ul>
 <script src="../js/final.min.js"></script>
 <audio id="audio"></audio>
@@ -50,7 +53,6 @@
     </ul>
 </div>
 <div class="back_to_top" id="back_to_top">
-
     <img src="../imags/back_to_go_2.png"  alt="">
 </div>
 <div class="music_switch" id="music_switch">

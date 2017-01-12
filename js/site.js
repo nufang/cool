@@ -607,10 +607,21 @@ window.onload=function() {
 
     ;(function(){
         var oC=document.querySelector('canvas');
+        var oSlipa=document.querySelector('#slip');
+        var oS=document.querySelector('.sz');
+        var oP=document.querySelector('.word');
         setTimeout(function(){
-
-        },3000)
+            move1(oSlipa,{top:0});
+        },3000);
+        oP.onclick=function(){
+            oC.style.display='none';
+            oSlipa.style.display='none';
+            document.documentElement.style.overflow='auto';
+            document.body.style.overflow='auto';
+        }
     })();
+
+
      //页面遮罩层
      //;(function(){
      //   var oLi=document.querySelector('.header_boss');

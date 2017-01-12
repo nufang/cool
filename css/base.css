@@ -29,8 +29,8 @@ h3{background: url(../imags/header.png) no-repeat 20px center #fff;height: 80px;
 .nav4{width:100%;height:200px; background:#000;}
 .nav1 p{font-size:20px;margin-top: 200px;}
 .nav1 ol{position: absolute;margin-top: 200px;width:680px;height:500px;left: 0;top:0;}
- .nav1 ol li{width:680px;height:80px;margin-top: 10px;overflow:hidden;-webkit-transition:0.8s all ease;-webkit-transform:perspective(800px) rotateY(0) rotateX(0) rotateZ(0) ;-webkit-transform-style:preserve-3d;}
-}
+.nav1 ol li{width:680px;height:80px;margin-top: 10px;overflow:hidden;-webkit-transition:0.8s all ease;-webkit-transform:perspective(800px) rotateY(0) rotateX(0) rotateZ(0) ;-webkit-transform-style:preserve-3d;}
+
 .nav1 ol li img{width: 40px;height:40px; -webkit-transform:perspective(800px) rotate(0deg);-webkit-transition:0.5s all ease; }
 .nav1 ol li img{float: left;}
 .nav1 ol  li i{font-size: 25px;color: #fff;line-height: 40px;float: left;width:580px;display: block;height: 40px;} 
