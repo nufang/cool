@@ -234,7 +234,7 @@ window.onload=function() {
                 return Math.floor(Math.random()*(m-n)+n);
             }
 
-               var oBox=document.querySelector('.header');
+               var oBox=document.querySelector('#header');
                var C=10;
                var R=8; 
                for(var i=0;i<C;i++){
@@ -276,9 +276,8 @@ window.onload=function() {
                         aS[i].style.WebkitTransition='none';
 
                         aS[i].style.backgroundImage = 'url(../imags/'+(iNow%5+1)+'.jpg)';
-                oBox.style.backgroundImage = 'url(../imags/'+((iNow+1)%5+1)+'.jpg)';
-                
-                
+                        oBox.style.backgroundImage = 'url(../imags/'+((iNow+1)%5+1)+'.jpg)';
+                        oBox.style.backgroundSize='100%';
                 aS[i].style.WebkitTransform = ' perspective(800px) translate(0,0) rotateY(0) rotateX(0)';
                 aS[i].style.opacity = 1;
                     }
@@ -388,8 +387,8 @@ window.onload=function() {
                 }
             },200)
 
-            
-       
+
+
 
 
        },false)
@@ -398,7 +397,7 @@ window.onload=function() {
         if(b){
             for (var i=0;i < aoLi.length;i++) {
 
-                aoLi[i].style.WebkitTransform=' rotateY(-180deg)';
+                aoLi[i].style.WebkitTransform=' rotateY(360deg)';
             };
             b=false;
 
@@ -409,8 +408,8 @@ window.onload=function() {
             };
             b=true;
         }
-    
-            
+
+
         },false)
     })();
    
@@ -441,7 +440,7 @@ window.onload=function() {
             x=ev.pageY-disY;
             y=ev.pageX-disX;
             oUl.style.WebkitTransform='perspective(800px) rotateY('+y/5+'deg) rotateX('+-x/5+'deg)';
-            iSpeedX=ev.pageX-lastX;
+             iSpeedX=ev.pageX-lastX;
              iSpeedY=ev.pageY-lastY;
              lastX=ev.pageX;
              lastY=ev.pageY;
@@ -659,17 +658,15 @@ window.onload=function() {
             var aImg=oOl.querySelectorAll('li img');
             var a=20;
             for(var i=0;i<aImg.length;i++){
-                
                  (function(index){
-
                     setInterval(function(){
-                        a+=10;
-                        if(a==800){
+                        a+=5;
+                        if(a>=8000){
                             a=20;
                         }
-                    aImg[index].style.WebkitTransform='perspective(800px) rotate('+a+'deg)';
-                },30) 
-                 })(i)
+                        aImg[index].style.WebkitTransform='perspective(800px) rotateZ('+a+'deg)';
+                    },30)
+                })(i)
                
             }
                          
