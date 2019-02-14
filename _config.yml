@@ -1,0 +1,8 @@
+title: Thxiaoguang1.GitHub.com
+description: this is web site
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
